@@ -140,7 +140,7 @@ with DAG(
     default_args=default_args,
     description="Daily batch ETL: Open Meteo API → Postgres warehouse",
     schedule_interval="0 6 * * *",   # runs every day at 6am
-    start_date=datetime(2024, 1, 1),
+    start_date=datetime(2026, 5, 24),
     catchup=False,
     tags=["etl", "weather", "portfolio"],
 ) as dag:
